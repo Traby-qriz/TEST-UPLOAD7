@@ -58,7 +58,7 @@ function appendLog(message, target = logDisplay) {
 
 function showAppSection() {
     const users = JSON.parse(localStorage.getItem('users') || '{}');
-    const username = Object.keys(users).find(name => users[name].id === currentUserId) || 'BLUExDEMON TECH 🌹';
+    const username = Object.keys(users).find(name => users[name].id === currentUserId) || '✝️EMMY HENZ TECH💎';
     
     authSection.classList.add('hidden');
     loginInterface.classList.add('hidden');
@@ -74,7 +74,7 @@ function showAppSection() {
     logDisplay.parentNode.insertBefore(usernameDisplay, logDisplay);
     
     // Display BLUE ID message and user's UID
-    appendLog("This is your ID👇");
+    appendLog("HERE IS YOUR GENERATED HENZ HOSTING ID👇");
     appendLog(`${currentUserId}`);
     
     setTimeout(() => {
@@ -109,7 +109,7 @@ function checkExistingSession() {
     
     if (currentUserId) {
         showAppSection();
-        appendLog(`Welcome back!😊😊`);
+        appendLog(`Welcome Back Buddy🌝🌈!!!`);
     } else {
         authSection.classList.remove('hidden');
         loginInterface.classList.add('hidden');
